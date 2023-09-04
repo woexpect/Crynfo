@@ -9,6 +9,6 @@ export const initialLoadState: InitialState = {
   loaded: false,
 };
 
-export const SKIP_LIMIT_NUMBER = 5;
+export const SKIP_LIMIT_NUMBER = 15;
 
 export const events = {};

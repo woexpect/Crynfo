@@ -11,6 +11,8 @@ const CryptoListObject = ({
   USDPrice = '$0',
   BTCRepresentation = '0.00BTC',
   isFirstItem = false,
+  onPress,
+  crypto,
 }: {
   addStyles?: any;
   name: string;
@@ -18,7 +20,13 @@ const CryptoListObject = ({
   USDPrice: string;
   BTCRepresentation: string;
   isFirstItem?: boolean;
+  onPress: any;
+  crypto: any;
 }) => {
+  const navigateToCrypto = () => {
+    onPress(crypto);
+  };
+
   return (
     <Pressable
       style={[
@@ -28,7 +36,8 @@ const CryptoListObject = ({
         styles.centerVertically,
         isFirstItem && styles.roundedTopCorners,
         addStyles,
-      ]}>
+      ]}
+      onPress={navigateToCrypto}>
       <Text style={[styles.tcBlack8, styles.black, styles.cryptoPlaceholder]}>
         {symbol}
       </Text>
@@ -58,10 +67,10 @@ const CryptoListObject = ({
             styles.paddingRight16,
           ]}>
           <Text style={[styles.tcBlack, styles.semiBold, styles.largeText]}>
-            {USDPrice}
+            {`$${USDPrice}`}
           </Text>
           <Text style={[styles.tcBlack64, styles.semiBold, styles.largeText]}>
-            {BTCRepresentation}
+            {`${BTCRepresentation} BTC`}
           </Text>
         </View>
       </View>

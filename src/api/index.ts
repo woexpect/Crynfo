@@ -19,11 +19,11 @@ export const getCoins = async (start: string = '0', limit: string = '15') => {
   return response;
 };
 
-export const getCoinMarket = async (coinId: string) => {
+export const getCoinMarket = async (id: string) => {
   const response = await service({
     path: 'api/coin/markets/',
     params: {
-      id: coinId,
+      id,
     },
     headers: defaultHeadersNoAuth,
   });

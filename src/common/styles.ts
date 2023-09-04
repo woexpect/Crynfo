@@ -88,6 +88,10 @@ export default ScaledSheet.create({
     width: scale(24),
     height: scale(24),
   },
+  contentSpacerLarge: {
+    width: '100%',
+    height: verticalScale(80),
+  },
   // Paddings
   paddingRight16: {
     paddingRight: verticalScale(16),
@@ -178,6 +182,12 @@ export default ScaledSheet.create({
     marginTop: -8,
     marginLeft: -4,
     letterSpacing: -2,
+  },
+  biTitle: {
+    fontSize: '80@ms0.3',
+    includeFontPadding: false,
+    letterSpacing: 0,
+    marginLeft: -4,
   },
   title: {
     fontSize: '26@ms0.3',

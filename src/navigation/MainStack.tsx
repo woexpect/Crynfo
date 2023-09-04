@@ -13,12 +13,12 @@ function MainStack() {
 
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name={DEMO} component={Demo} />
       <Stack.Screen name={HOME} component={Home} />
       <Stack.Screen
         name={DETAILED_CRYPTO_VIEW}
         component={DetailedCryptoView}
       />
+      <Stack.Screen name={DEMO} component={Demo} />
     </Stack.Navigator>
   );
 }

@@ -26,16 +26,16 @@ const ListComponents = () => {
         addStyles={[styles.marginTop16]}
         name="CryptoList"
         symbol="USDT"
-        USDPrice="$1231231.83"
-        BTCRepresentation="0.00 BTC"
+        USDPrice="1231231.83"
+        BTCRepresentation="0.00"
         isFirstItem
       />
       <CryptoListObject
         addStyles={[styles.marginTop1]}
         name="CryptoList"
         symbol="CLC"
-        USDPrice="$25799.83"
-        BTCRepresentation="1.00 BTC"
+        USDPrice="25799.83"
+        BTCRepresentation="1.00"
       />
       <CryptoDataListObject label="Market Cap" value="$502.347.046.167" />
       <CryptoDataListObject
