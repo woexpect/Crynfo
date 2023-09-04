@@ -1,9 +1,8 @@
-import {Dimensions, Platform} from 'react-native';
-import {ScaledSheet, verticalScale} from 'react-native-size-matters';
+import {ScaledSheet, verticalScale, scale} from 'react-native-size-matters';
 
-const {width, height} = Dimensions.get('window');
+// const {width, height} = Dimensions.get('window');
 
-const isIosDevice = Platform.OS === 'ios';
+// const isIosDevice = Platform.OS === 'ios';
 
 export default ScaledSheet.create({
   // Layout Styles
@@ -49,6 +48,45 @@ export default ScaledSheet.create({
   },
   row: {
     flexDirection: 'row',
+  },
+  textFieldContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#DEF263',
+    height: verticalScale(48),
+    borderRadius: '12@vs',
+  },
+  searchTextFieldContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    borderWidth: 2,
+    borderColor: '#EBEBEB',
+    height: verticalScale(40),
+    borderRadius: '24@vs',
+  },
+  input: {
+    flex: 1,
+    height: verticalScale(48),
+    padding: 0,
+    margin: 0,
+    paddingHorizontal: scale(10),
+    color: 'black',
+  },
+  inputWithIcon: {
+    paddingRight: scale(40),
+  },
+  iconInputContainer: {
+    marginLeft: scale(16),
+    width: verticalScale(32),
+    height: verticalScale(24),
+  },
+  icon: {
+    width: scale(24),
+    height: scale(24),
   },
   // Paddings
   paddingRight16: {

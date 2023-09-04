@@ -1,10 +1,11 @@
 import React from 'react';
 import {StatusBar, ScrollView} from 'react-native';
 // Custom components
+import ListComponents from './listComponents';
+import OtherComponents from './otherComponents';
+import TextStyles from './textStyles';
 // User tools
 import styles from '../../../common/styles';
-import TextStyles from './textStyles';
-import ListComponents from './listComponents';
 
 const Demo = () => {
   return (
@@ -13,6 +14,7 @@ const Demo = () => {
       <ScrollView style={styles.completeScreen}>
         <TextStyles />
         <ListComponents />
+        <OtherComponents />
       </ScrollView>
     </>
   );
