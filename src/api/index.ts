@@ -6,9 +6,25 @@ const defaultHeadersNoAuth = {
 };
 
 // API calls
-export const getUserProfile = async (start: number = 0, limit: number = 15) => {
+export const getCoins = async (start: string = '0', limit: string = '15') => {
   const response = await service({
-    path: `api/tickers/?start=${start}&limit=${limit}`,
+    path: 'api/tickers/',
+    params: {
+      start,
+      limit,
+    },
+    headers: defaultHeadersNoAuth,
+  });
+
+  return response;
+};
+
+export const getCoinMarket = async (coinId: string) => {
+  const response = await service({
+    path: 'api/coin/markets/',
+    params: {
+      id: coinId,
+    },
     headers: defaultHeadersNoAuth,
   });
 
