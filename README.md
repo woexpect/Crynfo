@@ -1,8 +1,16 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Quick intro
+# Quick intro & Notes
 
 To run this project just do as usual as you would for running a RN Project, if not sure how to do that follow instructions of configuration and run below.
+
+The code doesn't contain plain comments into the code, as I follow documentation practice principles like KISS and use of good naming conventions to keep the code self-documented.
+
+I had to make a lot of assumptions since the instructions of the test where wide open, so I had to create the UI and the design of the overall application from scratch based on similar applications out there to achieve the list and single crypto coin presentations. Also I used my most used stack for React Native as always. The 'filter' option was translated as the search option in the home of the app since there was not specification of which kind of filters to apply, so I went mainstream with the most used filter of all time, the name search.
+
+Also there is some basic state/error handling for the components, nothing too crazy.
+
+The app was tested in both Android and iOS simulators.
 
 # Regarding Tests
 

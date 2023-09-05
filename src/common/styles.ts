@@ -74,7 +74,7 @@ export default ScaledSheet.create({
     padding: 0,
     margin: 0,
     paddingHorizontal: scale(10),
-    color: 'black',
+    color: '#DEF263',
   },
   inputWithIcon: {
     paddingRight: scale(40),

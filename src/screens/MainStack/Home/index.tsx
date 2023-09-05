@@ -25,6 +25,7 @@ const Home = ({navigation}: any) => {
   // Local screen's data
   const [currencySearch, setCurrencySearch] = useState('');
   const [skip, setSkip] = useState(0);
+  const [filteredData, setFilteredData] = useState(null);
 
   const bottomContentSpacer = () => {
     return (
@@ -78,6 +79,21 @@ const Home = ({navigation}: any) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    if (currencySearch !== '') {
+      const asd = data.filter((item: any) => {
+        return (
+          item?.name.toLowerCase().includes(currencySearch.toLowerCase()) ||
+          item?.symbol.toLowerCase().includes(currencySearch.toLowerCase())
+        );
+      });
+      setFilteredData(asd);
+    } else {
+      setFilteredData(null);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currencySearch]);
+
   return (
     <>
       <StatusBar barStyle="light-content" />
@@ -128,6 +144,27 @@ const Home = ({navigation}: any) => {
           <Text style={[styles.bold, styles.tcRed, styles.title]}>
             No internet connection
           </Text>
+        )}
+        {filteredData && (
+          <>
+            <Text
+              style={[
+                styles.bold,
+                styles.tcMain,
+                styles.title,
+                styles.marginTop16,
+              ]}>
+              Search Results
+            </Text>
+            <FlatList
+              style={[styles.completeScreen, styles.marginTop16]}
+              data={filteredData}
+              renderItem={renderCrypto}
+              keyExtractor={item => item?.id}
+              showsVerticalScrollIndicator={false}
+              ListFooterComponent={bottomContentSpacer()}
+            />
+          </>
         )}
       </View>
     </>
