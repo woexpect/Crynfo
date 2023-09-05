@@ -37,7 +37,8 @@ const CryptoListObject = ({
         isFirstItem && styles.roundedTopCorners,
         addStyles,
       ]}
-      onPress={navigateToCrypto}>
+      onPress={navigateToCrypto}
+      testID="cryptoListObject">
       <Text style={[styles.tcBlack8, styles.black, styles.cryptoPlaceholder]}>
         {symbol}
       </Text>

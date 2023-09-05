@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with all possible values 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      {
+        "flexDirection": "row",
+      },
+      {
+        "justifyContent": "space-between",
+      },
+      {
+        "marginTop": 47.08235294117647,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "fontFamily": "Inter-Regular",
+        },
+        {
+          "color": "#DEF263",
+        },
+      ]
+    }
+  >
+    Test Crypto2
+  </Text>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "fontFamily": "Inter-Regular",
+          },
+          {
+            "color": "#DEF263",
+          },
+          {
+            "color": "#F26363",
+          },
+        ]
+      }
+    >
+      TC2
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "fontFamily": "Inter-Regular",
+          },
+          {
+            "color": "#DEF263",
+          },
+          {
+            "marginLeft": 31.388235294117646,
+          },
+          {
+            "color": "#F26363",
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`renders correctly with no values 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      {
+        "flexDirection": "row",
+      },
+      {
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "fontFamily": "Inter-Regular",
+        },
+        {
+          "color": "#DEF263",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "fontFamily": "Inter-Regular",
+          },
+          {
+            "color": "#DEF263",
+          },
+          false,
+        ]
+      }
+    >
+      $NaN
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "fontFamily": "Inter-Regular",
+          },
+          {
+            "color": "#DEF263",
+          },
+          {
+            "marginLeft": 31.388235294117646,
+          },
+          false,
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`renders correctly with required values only 1`] = `
+<View
+  style={
+    [
+      {
+        "width": "100%",
+      },
+      {
+        "flexDirection": "row",
+      },
+      {
+        "justifyContent": "space-between",
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    style={
+      [
+        {
+          "fontFamily": "Inter-Regular",
+        },
+        {
+          "color": "#DEF263",
+        },
+      ]
+    }
+  >
+    Test Crypto
+  </Text>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "fontFamily": "Inter-Regular",
+          },
+          {
+            "color": "#DEF263",
+          },
+          false,
+        ]
+      }
+    >
+      $NaN
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "fontFamily": "Inter-Regular",
+          },
+          {
+            "color": "#DEF263",
+          },
+          {
+            "marginLeft": 31.388235294117646,
+          },
+          false,
+        ]
+      }
+    />
+  </View>
+</View>
+`;

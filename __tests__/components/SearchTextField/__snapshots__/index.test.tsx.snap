@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with all possible values 1`] = `
+<View
+  style={
+    {
+      "marginTop": 47.08235294117647,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "borderColor": "#DEF263",
+        "borderRadius": 23.541176470588233,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "height": 94.16470588235293,
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "height": 47.08235294117647,
+          "marginLeft": 34.285714285714285,
+          "width": 62.77647058823529,
+        }
+      }
+    >
+      <Image
+        source={
+          {
+            "testUri": "../../../src/assets/images/icons/search.png",
+          }
+        }
+        style={
+          [
+            {
+              "height": 51.42857142857143,
+              "width": 51.42857142857143,
+            },
+            {
+              "tintColor": "#DEF263",
+            },
+          ]
+        }
+      />
+    </View>
+    <TextInput
+      autoCapitalize="none"
+      keyboardType="number-pad"
+      onChangeText={[Function]}
+      placeholder="Test Placeholder"
+      placeholderTextColor="#FFFFFF"
+      secureTextEntry={true}
+      style={
+        [
+          {
+            "color": "black",
+            "flex": 1,
+            "height": 94.16470588235293,
+            "margin": 0,
+            "padding": 0,
+            "paddingHorizontal": 21.428571428571427,
+          },
+          {
+            "fontFamily": "Inter-Regular",
+          },
+          {
+            "paddingRight": 85.71428571428571,
+          },
+        ]
+      }
+      testID="searchTextInput"
+      value="test"
+    />
+  </View>
+</View>
+`;
+
+exports[`renders correctly with required values only 1`] = `
+<View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "borderColor": "#DEF263",
+        "borderRadius": 23.541176470588233,
+        "borderWidth": 1,
+        "flexDirection": "row",
+        "height": 94.16470588235293,
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <TextInput
+      keyboardType="default"
+      onChangeText={[Function]}
+      placeholder=""
+      placeholderTextColor="#DEF263"
+      secureTextEntry={false}
+      style={
+        [
+          {
+            "color": "black",
+            "flex": 1,
+            "height": 94.16470588235293,
+            "margin": 0,
+            "padding": 0,
+            "paddingHorizontal": 21.428571428571427,
+          },
+          {
+            "fontFamily": "Inter-Regular",
+          },
+          undefined,
+        ]
+      }
+      testID="searchTextInput"
+      value="test"
+    />
+  </View>
+</View>
+`;

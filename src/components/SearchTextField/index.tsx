@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, TextInput, TouchableWithoutFeedback, View} from 'react-native';
+import {Image, TextInput, View} from 'react-native';
 // Custom components
 // User tools
 import styles from '../../common/styles';
@@ -36,9 +36,7 @@ const SearchTextField = ({
       <View style={styles.textFieldContainer}>
         {icon && (
           <View style={styles.iconInputContainer}>
-            <TouchableWithoutFeedback onPress={() => console.log('asd')}>
-              <Image source={icon} style={[styles.icon, styles.tintMain]} />
-            </TouchableWithoutFeedback>
+            <Image source={icon} style={[styles.icon, styles.tintMain]} />
           </View>
         )}
         <TextInput
@@ -50,6 +48,7 @@ const SearchTextField = ({
           keyboardType={keyboardType}
           secureTextEntry={secure}
           autoCapitalize={autoCapitalize}
+          testID="searchTextInput"
         />
       </View>
     </View>
