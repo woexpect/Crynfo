@@ -1,5 +1,25 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+# Quick intro
+
+To run this project just do as usual as you would for running a RN Project, if not sure how to do that follow instructions of configuration and run below.
+
+# Regarding Tests
+
+I've tested some of the base components of the application since those are the ones that make sense to unit test, was tempted to test redux store reducers and actions but found that ['you should not feel the need to test action creators by themselves'](https://redux.js.org/usage/writing-tests#action-creators--thunks), so leaving them untested. I can do further tests but I think these are enough to show my skills.
+
+To run the tests:
+```bash
+# plain jest test
+npm run test
+
+# get a coverage report
+ npx jest --coverage
+```
+
+# App's Design
+
+If you want to check part of the designing process and inspiration, take a look into this [Figma](https://www.figma.com/file/0Nr2hcb1Y6eVIQMbeANgbl/Untitled?type=design&node-id=0%3A1&mode=design&t=KCqnPFVE0BlIcJ6w-1) file.
 # Getting Started
 
 >**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.

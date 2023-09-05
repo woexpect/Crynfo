@@ -78,8 +78,6 @@ it('Should run without action set', () => {
     testID: 'searchTextInput',
   }).props;
 
-  console.log('searchTextField', searchTextField);
-
   expect(testValue).toEqual('test');
   act(() => searchTextField.onChangeText('Another thing'));
   expect(testValue).toEqual('test');
